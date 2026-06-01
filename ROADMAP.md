@@ -14,31 +14,36 @@ Zielgruppe Phase 1: Arbeitgeber, Data & AI Jobs.
 
 ## Phasen
 
-- [ ] **Milestone A** — Fundament & Setup
+- [x] **Milestone A** — Fundament & Setup ✅
   - [x] `/project-init website-portfolio web` — MD-Files + git
-  - [ ] Vite + Three.js + GSAP installieren
-  - [ ] Design Tokens + Base Styles
-  - [ ] index.html Grundgerüst (alle Sections als Shells)
+  - [x] Vite + Three.js + GSAP installieren (node v24, npm 11)
+  - [x] Design Tokens + Base Styles (`variables.css` · `base.css` · `layout.css` · `components.css`)
+  - [x] index.html Grundgerüst — alle Sections live, `build` grün
 
-- [ ] **Milestone B** — Hero
-  - [ ] Three.js 3D Network Scene
-  - [ ] Mouse Parallax + Animation Loop
-  - [ ] Text Overlay + CTA
+- [ ] **Milestone B** — Hero (Three.js bereits implementiert in A)
+  - [x] Three.js 3D Network Scene (`src/hero/network.js`)
+  - [x] Mouse Parallax + Animation Loop
+  - [x] Text Overlay + CTA
+  - [ ] Review: Hero Timing, Spacing, Mobile-Check
 
-- [ ] **Milestone C** — Content Sections
-  - [ ] Transition Story Section
-  - [ ] Data Cases (zh-tram-flow featured + Teaser-Cards)
-  - [ ] Credibility Strip (Logos + Awards)
-  - [ ] Skills Section
-  - [ ] Contact + Footer
+- [ ] **Milestone C** — Content Sections (bereits in A gebaut, Review ausstehend)
+  - [x] Transition Story Section
+  - [x] Data Cases (zh-tram-flow featured + Teaser-Cards)
+  - [x] Credibility Strip (Logos + Awards)
+  - [x] Skills Section
+  - [x] Contact + Footer
+  - [ ] Review: Spacing, Typografie, Mobile-Check
 
 - [ ] **Milestone D** — GSAP + Responsive + Build
-  - [ ] Alle ScrollTrigger Animationen
-  - [ ] Mobile Responsive
-  - [ ] `npm run build` → Check
+  - [x] GSAP ScrollTrigger Animationen (Stub in `src/scroll/animations.js`)
+  - [ ] Animationen ausbauen + tunen
+  - [ ] Mobile Responsive vollständig prüfen
+  - [ ] Code Splitting (Three.js lazy load)
+  - [ ] `npm run build` → finaler Check
 
 - [ ] **Milestone E** — Landing Pages
-  - [ ] `/for-employers/index.html`
+  - [x] `/for-employers/index.html` — Stub live
+  - [ ] `/for-employers/` vollständig ausbauen
   - [ ] `/for-clients/` (Phase 2+)
   - [ ] `/for-ai-projects/` (Phase 2+)
 

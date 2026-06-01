@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kay Wiegand — Open to Data & AI positions. Senior Tech Consultant with 20+ years experience transitioning into Data Engineering, Analytics and AI." />
+  <title>For Employers — Kay Wiegand</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="/src/styles/variables.css" />
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/layout.css" />
+  <link rel="stylesheet" href="/src/styles/components.css" />
+
+  <style>
+    .lp-hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: var(--space-xl) var(--space-md);
+      background: var(--color-bg);
+    }
+
+    .lp-hero__content {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .availability-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--color-accent);
+      border-radius: 2px;
+      color: var(--color-accent);
+      font-size: var(--font-size-xs);
+      font-weight: var(--weight-bold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: var(--space-md);
+    }
+
+    .availability-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .lp-title {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      font-weight: var(--weight-black);
+      letter-spacing: -0.04em;
+      line-height: 0.95;
+      margin-bottom: 1.5rem;
+    }
+
+    .lp-sub {
+      font-size: var(--font-size-lg);
+      color: var(--color-muted);
+      font-weight: var(--weight-light);
+      max-width: 540px;
+      margin-bottom: var(--space-lg);
+      line-height: 1.5;
+    }
+
+    .placeholder-note {
+      margin-top: var(--space-xl);
+      padding: var(--space-md);
+      border: 1px dashed var(--color-border);
+      border-radius: 4px;
+      color: var(--color-subtle);
+      font-size: var(--font-size-sm);
+      max-width: 480px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="/" class="nav__logo">← Kay Wiegand</a>
+    <ul class="nav__links">
+      <li><a href="/#work">Work</a></li>
+      <li><a href="/#contact" class="nav__cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="lp-hero">
+    <div class="lp-hero__content">
+
+      <div class="availability-badge">Available for hire</div>
+
+      <h1 class="lp-title">
+        Senior Data & AI<br />
+        <span class="text-accent">Ready to join your team.</span>
+      </h1>
+
+      <p class="lp-sub">
+        20+ years building complex digital systems for global brands.
+        Now applying that technical depth to data engineering, analytics, and AI.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:hey@kaywiegand.de" class="btn btn--primary">
+          Get in touch →
+        </a>
+        <a href="https://linkedin.com/in/kaywiegand" target="_blank" rel="noopener" class="btn btn--outline">
+          LinkedIn
+        </a>
+        <a href="/#work" class="contact-link">
+          View work samples ↓
+        </a>
+      </div>
+
+      <div class="placeholder-note">
+        <strong>Milestone E</strong> — Full employer landing page coming soon.<br />
+        Will include: role fit matrix, timeline, references, downloadable CV.
+      </div>
+
+    </div>
+  </section>
+
+  <script type="module" src="/src/nav.js"></script>
+  <script type="module">
+    import { initNav } from '/src/nav.js'
+    document.addEventListener('DOMContentLoaded', initNav)
+  </script>
+
+</body>
+</html>
