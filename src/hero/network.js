@@ -72,14 +72,14 @@ function setupRenderer() {
     alpha: true,
   })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
-  renderer.setSize(canvasEl.clientWidth || window.innerWidth, canvasEl.clientHeight || window.innerHeight)
+  renderer.setSize(window.innerWidth, window.innerHeight)
   renderer.setClearColor(0x000000, 0)
 }
 
 function setupScene() {
   scene = new THREE.Scene()
-  const w = canvasEl.clientWidth || window.innerWidth
-  const h = canvasEl.clientHeight || window.innerHeight
+  const w = window.innerWidth
+  const h = window.innerHeight
   camera = new THREE.PerspectiveCamera(CONFIG.camera.fov, w / h, 0.1, 100)
   camera.position.z = CONFIG.camera.z
 }
