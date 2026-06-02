@@ -19,3 +19,7 @@ Prio: `1` = hoch · `2` = mittel · `3` = niedrig
 | 8 | **for-ai-projects LP** — Landing Page für AI Workflow Clients | 3 | Plan 2026-06-01 |
 | 9 | **Domain** — kaywiegand.de oder neue Domain? | 2 | Plan 2026-06-01 |
 | 10 | **Deployment** — GitHub Pages / Netlify / Vercel | 2 | Plan 2026-06-01 |
+| 11 | **BUG: Hero Network Sizing** — Canvas ist zentriert statt fullscreen (100vw/100vh Problem) | 1 | 2026-06-02 |
+| 12 | **BUG: Dim-Overlay dunkelt Content ab** — Soll nur BG dimmen, Content muss hell bleiben (z-index/Struktur) | 1 | 2026-06-02 |
+| 13 | **CI/CD basiert auf kaywiegand.de** — Inhalte, Styles, JS-Assets von alter Site renutzen (Zugriff prüfen) | 2 | 2026-06-02 |
+| 14 | **Multi-Landing-Pages Strategie** — Umsetzung der 3 Zielgruppen-LPs (`/for-employers`, `/for-clients`, `/for-ai-projects`) | 1 | Plan 2026-06-01 |
