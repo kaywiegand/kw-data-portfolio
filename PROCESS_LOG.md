@@ -42,3 +42,32 @@ Metriken, Findings, Outputs gehören in Notebooks/Code — nicht hier.
 **Visuell geprüft via Claude Preview MCP:** Hero ✅ · Story Arc ✅ · Data Cases ✅ · Credibility Strip ✅ · Skills ✅ · Contact ✅ · Footer ✅
 
 - Nächster Schritt: Milestone B/C Review (Spacing, Mobile-Check) → dann Milestone D
+
+## 2026-06-02 — Hero Animation Überarbeitung + Varianten
+
+**Entscheidung**
+- Three.js Network als PRIMARY Hero-Animation gewählt
+- Fullscreen background-Style: Canvas fixed im Viewport, Content scrolls oben drüber
+- Scroll-Dim-Effekt: Dezentes Abdimmen auf 70% Opacity beim Scrollen (easing curve)
+
+**Implementiert**
+- `src/hero/network.js` v2: Vollständig neu mit direkter Maus-Interaktion (Node Repulsion statt nur Camera Parallax)
+- `src/hero/swarm.js` + `src/hero/flow.js`: Zwei alternative Canvas 2D Animationen für A/B Compare
+- `/compare/index.html`: Vergleichsseite mit Tab-Switch zwischen 3 Varianten (Network · Swarm · Flow)
+- `index.html`: Hero refactored → fullscreen Network BG + Dim-Overlay mit GSAP scroll animation
+- `src/main.js`: Scroll-Dim-Logic mit easing
+- `assets/fonts/`: Self-hosted Lato-Fonts von kaywiegand.de (kein Google Fonts dependency)
+
+**Feedback → Entscheidung**
+- A (Network): "fehlt interaction" → Fixed: Node Repulsion auf Cursor (3D Unprojection)
+- B (Swarm): "buggy dispersed elements" → Keep für Compare-Seite, aber nicht primary
+- C (Flow): Kandidat für zukünftige Variante, nicht für MVP
+
+**Build & Deploy**
+- Vite build grün, Code Splitting aktiv (Three.js 468kb separater Chunk)
+- Production: localhost:5173 fullscreen Network working mit Scroll-Dim
+- Committed + gepusht zu origin/main
+
+**Nächster Schritt**
+- Milestone D: Mobile Responsive, weitere GSAP ScrollTrigger (Sections)
+- Milestone E: `/for-employers/` vollständig ausbauen
