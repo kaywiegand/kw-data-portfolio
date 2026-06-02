@@ -8,6 +8,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         employers: './for-employers/index.html',
+        compare: './compare/index.html',
       }
     }
   },
