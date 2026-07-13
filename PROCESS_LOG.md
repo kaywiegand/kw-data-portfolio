@@ -1,4 +1,4 @@
-# PROCESS_LOG.md — website-portfolio
+# PROCESS_LOG.md — kw-data-portfolio
 
 Verlauf + Entscheidungen. Pointer auf Files — kein Inhalt kopieren.
 Metriken, Findings, Outputs gehören in Notebooks/Code — nicht hier.

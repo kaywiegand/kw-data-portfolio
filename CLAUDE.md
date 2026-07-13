@@ -1,4 +1,4 @@
-# CLAUDE.md — website-portfolio
+# CLAUDE.md — kw-data-portfolio
 
 > Projektspezifische Anweisungen für Claude Code.
 > Ergänzt die globale CLAUDE.md aus dem Workspace-Root.
@@ -9,7 +9,7 @@
 
 | Feld | Inhalt |
 | :--- | :--- |
-| Slug | `website-portfolio` |
+| Slug | `kw-data-portfolio` |
 | Typ | web |
 | Stack | Vite · Three.js · GSAP · Lato · Plain HTML/CSS/JS |
 | Status | 🟢 aktiv |

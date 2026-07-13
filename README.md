@@ -1,4 +1,4 @@
-# website-portfolio
+# kw-data-portfolio
 
 > Kay Wiegand — Professional portfolio website. Multi-audience platform for Data & AI positioning.
 
