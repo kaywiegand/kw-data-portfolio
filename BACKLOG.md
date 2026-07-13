@@ -23,3 +23,4 @@ Prio: `1` = hoch · `2` = mittel · `3` = niedrig
 | 12 | **BUG: Dim-Overlay dunkelt Content ab** — Soll nur BG dimmen, Content muss hell bleiben (z-index/Struktur) | 1 | 2026-06-02 |
 | 13 | **CI/CD basiert auf kaywiegand.de** — Inhalte, Styles, JS-Assets von alter Site renutzen (Zugriff prüfen) | 2 | 2026-06-02 |
 | 14 | **Multi-Landing-Pages Strategie** — Umsetzung der 3 Zielgruppen-LPs (`/for-employers`, `/for-clients`, `/for-ai-projects`) | 1 | Plan 2026-06-01 |
+| 15 | **BUG: Schwarzer Screen nach Scroll weg vom Hero** — DOM/Styles korrekt (a11y-Snapshot bestätigt), aber Screenshot nach Scroll komplett schwarz. Vermutlich Three.js-Canvas + Scroll-Dim-Overlay (`src/main.js:14-36`) im Zusammenspiel mit programmatischem Scroll. Mit echtem Maus-Scroll im Browser gegenchecken | 3 | 2026-07-13 |
